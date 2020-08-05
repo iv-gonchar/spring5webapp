@@ -1,6 +1,5 @@
 package guru.springframework.spring5webapp.bootstrap;
 
-import guru.springframework.spring5webapp.domain.Address;
 import guru.springframework.spring5webapp.domain.Author;
 import guru.springframework.spring5webapp.domain.Book;
 import guru.springframework.spring5webapp.domain.Publisher;
@@ -45,8 +44,7 @@ public class BootStrapData implements CommandLineRunner {
         authorRepository.save(rod);
         bookRepository.save(noEJB);
 
-        Address address = new Address("75 Arlington Street Suite 300 ", "Boston", "USA", "02116");
-        Publisher publisher = new Publisher("Addison-Wesley", address);
+        Publisher publisher = new Publisher("Addison-Wesley", "75 Arlington Street Suite 300 ", "Boston", "USA", "02116");
 
         publisherRepository.save(publisher);
 
