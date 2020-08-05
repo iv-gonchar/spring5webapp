@@ -6,12 +6,12 @@ public class Address {
     private String addressLine1;
     private String city;
     private String state;
-    private int zip;
+    private String zip;
 
     public Address() {
     }
 
-    public Address(String addressLine1, String city, String state, int zip) {
+    public Address(String addressLine1, String city, String state, String zip) {
         this.addressLine1 = addressLine1;
         this.city = city;
         this.state = state;
@@ -42,11 +42,11 @@ public class Address {
         this.state = state;
     }
 
-    public int getZip() {
+    public String getZip() {
         return zip;
     }
 
-    public void setZip(int zip) {
+    public void setZip(String zip) {
         this.zip = zip;
     }
 
